@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+}
+ .cover {
+  background-image: url('Screenshot\ 2025-01-29\ 203805.png ');
+  background-size: 100% 100%;             /* Fill the screen while preserving aspect ratio */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;                    /* Fix to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;                         /* Behind everything */              /* Optional: make it lighter for readability */
+}
+
+
+h1 {
+  margin-bottom: 40px;
+
+}
+ .button-container {
+  display: flex;
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically if height is set */
+  gap: 20px;                   /* Smaller gap between buttons */
+  margin-top: 40px;
+  flex-wrap: nowrap; 
+  height: 50vh;          /* Keep all 3 buttons on one line */
+}
+#openRulebookBtnAR {
+  background-color: #722F37; /* wine color */
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#openRulebookBtnAR:hover {
+  background-color: white;
+  color: #722F37; /* wine color text on hover */
+  border: 2px solid #722F37;
+}
+#openRulebookBtnENG {
+  background-color: #722F37; /* wine color */
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#openRulebookBtnENG:hover {
+  background-color: white;
+  color: #722F37; /* wine color text on hover */
+  border: 2px solid #722F37;
+}
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+  }
+  
+  .back-arrow-img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-arrow-img:hover {
+    transform: scale(1.2);
+  }
+ @media (max-width: 600px) {
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
